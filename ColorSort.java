@@ -1,6 +1,3 @@
-/**
- * Created by Ammar on 4/15/17.
- */
 public class ColorSort {
 
     public static void main(String[] args) {
@@ -13,17 +10,18 @@ public class ColorSort {
         char [] array6 = {'R','G','B','R','G','B'};
         char [] array7 = {'B', 'B', 'G', 'B', 'B'};
         char [] array8 = {'G','G','G','R','B','G'};
-        System.out.println(finish(array));
-        System.out.println(finish(array2));
-        System.out.println(finish(array3));
-        System.out.println(finish(array4));
-        System.out.println(finish(array5));
-        System.out.println(finish(array6));
-        System.out.println(finish(array7));
-        System.out.println(finish(array8));
+        
+        System.out.println(solution(array));
+        System.out.println(solution(array2));
+        System.out.println(solution(array3));
+        System.out.println(solution(array4));
+        System.out.println(solution(array5));
+        System.out.println(solution(array6));
+        System.out.println(solution(array7));
+        System.out.println(solution(array8));
     }
 
-    public static char[] finish(char[] array){
+    public static char[] solution(char[] array){
         int redIndicator = 0;
         int ySlider = array.length-1;
 
@@ -63,8 +61,6 @@ public class ColorSort {
                 }
                     break;
             }
-
-
         }
         return array;
     }
